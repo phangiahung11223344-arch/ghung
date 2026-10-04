@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MultiRuntime Bot Host</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="wrap">
+<header><div class="logo">H</div><div class="brand"><b>HINDUSTANHACK</b><span>DISCORD • MULTI-RUNTIME HOST</span></div><span class="pill"><i></i> PANEL READY</span></header>
+<section class="hero"><div><small>IPHONE CONTROL PANEL</small><h1>Bot Hosting</h1><p>Quản lý tệp Python và Node.js từ trình duyệt điện thoại.</p></div><div class="bolt">⌘</div></section>
+<section class="grid"><article><small>PANEL STATUS</small><h2 id="status">LOCKED</h2><p id="runtime">Nhập mật khẩu để kết nối.</p></article><article><small>STORED TOOLS</small><h2 id="count">—</h2><p>File được lưu, chưa chạy.</p></article></section>
+<section class="panel"><h3>🔐 Kết nối panel</h3><p>Nhập PANEL_PASSWORD đã đặt trong biến môi trường hosting.</p><div class="row"><input id="password" type="password" autocomplete="current-password" placeholder="Panel password"><button id="connect">Kết nối</button></div><p id="notice" role="status">Chưa kết nối.</p></section>
+<section class="panel"><h3>📤 Tải tool từ iPhone</h3><p>Chọn file <code>.py</code> hoặc <code>.js</code>. Giới hạn mặc định 2 MB.</p><form id="uploadForm"><input id="file" type="file" accept=".py,.js,text/x-python,application/javascript" required><button type="submit" id="upload" disabled>Tải file lên</button></form><p class="warning">An toàn: panel chỉ lưu file. Không thực thi mã tải lên.</p></section>
+<section class="panel"><div class="title-row"><div><h3>🗂 Tool Library</h3><p>Danh sách file đã tải lên.</p></div><button id="refresh" class="secondary" disabled>Làm mới</button></div><div id="files" class="files">Kết nối để xem danh sách file.</div></section>
+<section class="panel"><h3>🛡️ Bảo mật</h3><ul><li>Không đưa bot token vào file được tải lên.</li><li>Không commit file <code>.env</code> lên GitHub.</li><li>Chỉ cấp quyền panel cho người tin cậy.</li><li>Để chạy tool thật, dùng worker/container riêng với giới hạn CPU, RAM, mạng và thời gian.</li></ul></section>
+<footer>Starter panel • Free hosting may sleep or have usage limits.</footer>
+</div><script src="/app.js"></script></body></html>
